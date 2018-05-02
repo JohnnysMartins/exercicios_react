@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom'
 import ClassComponenet from './class-componenet'
 
 
-ReactDOM.render(<ClassComponenet value={10} />, document.getElementById('app'))
+ReactDOM.render(<ClassComponenet label="Contador" initialValue={10} />, document.getElementById('app'))

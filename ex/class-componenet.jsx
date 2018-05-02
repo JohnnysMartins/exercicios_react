@@ -1,11 +1,24 @@
 import React from 'react'
 
 export default class ClassComponenet extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = { value: props.initialValue }
+    }
+
+    sum(delta) {
+        this.setState({ value: this.state.value + delta })
+    }
+
     render() {
-        let valor = this.props.value
-        valor++
         return (
-            <h1>{valor}</h1>
+            <div>
+                <h1>{this.props.label}</h1>
+                <h2>{this.state.value}</h2>
+                <button onClick={() => this.sum(-1)}>Remove</button>
+                <button onClick={() => this.sum(1)}>Adiciona</button>
+            </div>
         )
     }
 }
