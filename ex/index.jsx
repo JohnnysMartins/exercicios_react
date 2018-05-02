@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import ClassComponenet from './class-componenet'
+import Field from './field'
 
 
-ReactDOM.render(<ClassComponenet label="Contador" initialValue={10} />, document.getElementById('app'))
+
+ReactDOM.render(<Field initialValue="Teste" />, document.getElementById('app'))

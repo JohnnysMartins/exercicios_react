@@ -1,2 +1,4 @@
 node_modules
 *.log
+.idea/
+.idea/inspectionProfiles/Project_Default.xml
